@@ -6353,6 +6353,62 @@ td.visible-print {
     display: none !important;
   }
 }
+body:before {
+  background-image: -svg(radial-gradient(center, ellipse cover, transparent 20%, black 95%));
+  position: absolute;
+  content: '';
+  z-index: 0;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+body:after {
+  background: url("http://s.cdpn.io/1715/noise-1.png");
+  position: absolute;
+  content: '';
+  z-index: 0;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+audio {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+
+.message {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 1.2;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  margin-left: -180px;
+  margin-top: -30px;
+  font-size: 13px;
+  padding: 20px;
+  display: none;
+  z-index: 3;
+  height: 60px;
+  width: 360px;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+}
+
+#intro {
+  display: block;
+  position: relative;
+}
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -6368,6 +6424,11 @@ header {
   height: 600px;
   overflow: hidden;
   text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  opacity: 0.7;
 }
 
 .song-info {
@@ -6381,11 +6442,6 @@ header {
 .song-info .playlist-name {
   font-size: 12px;
   color: white;
-}
-
-.music-player {
-  display: block;
-  top: 150px;
 }
 
 .tint {
@@ -6416,4 +6472,37 @@ header {
 
 .fancy-font {
   font-family: "Kaushan Script", cursive;
+}
+
+.music-player {
+  display: inline-block;
+  top: 30px;
+  overflow: hidden;
+}
+.music-player a {
+  position: relative;
+  float: left;
+  width: 49px;
+  height: 49px;
+  margin: 0 20px;
+  text-indent: -9999px;
+  background: url(../img/player-sprite.png) no-repeat;
+  opacity: 0.8;
+}
+.music-player a:hover {
+  opacity: 1.0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
+  .music-player a {
+    background: url(../img/player-sprite.png) no-repeat;
+  }
+}
+.music-player a.previous {
+  background-position: 0px 0px;
+}
+.music-player a.play {
+  background-position: -99px 0px;
+}
+.music-player a.next {
+  background-position: -152px 0px;
 }
