@@ -1,0 +1,92 @@
+/*
+* Custom variables
+*/
+$main-font: 'Lato', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+
+$padding: 10px;
+$margin: 10px;
+
+/*
+* Override Bootstrap variables
+*/
+$font-family-sans-serif: $main-font;
+ 
+@import 'bootstrap';
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+ 
+body {
+    color: $grey;
+    font-size: $font-size;
+}
+ 
+ 
+header {
+    max-height: 600px;
+    height: 600px;
+    overflow: hidden;
+    text-align:center;
+
+    
+}
+
+
+.song-info{
+	display:block;
+	margin-top:-100px;
+
+	.song-title{
+		font-size: 32px;
+        color: $white;
+	}
+	.playlist-name{
+		font-size: 12px;
+		color:$white;
+	}
+
+}
+.music-player{
+	display:block;
+	top:150px;
+}
+
+
+.tint {
+	top:200px;
+    position:relative;
+    width:600px;
+    height:400px;
+    margin-left:auto;
+   	margin-right:auto;
+    img {
+	    width:600px;
+	    height:400px;
+	}	
+}
+.tint:after {
+    content:'\A';
+    position:absolute;
+    width:600px; height:400px;
+    top:0px; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0.8;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.fancy-font {
+    font-family: $fancy-font;
+}
