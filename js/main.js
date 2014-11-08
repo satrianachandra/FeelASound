@@ -189,6 +189,16 @@
             };
           })(this);
           analyser.start();
+          $('.pause').on('click', function(e){
+            e.preventDefault();
+            analyser.stop();
+
+          });
+          $('.play').on('click', function(e){
+            e.preventDefault();
+            analyser.start();
+
+          });
           document.body.appendChild(analyser.audio);
           intro = document.getElementById('intro');
           intro.style.display = 'none';
@@ -222,5 +232,7 @@
       return _results;
     }
   });
+
+  
 
 }).call(this);

@@ -40,6 +40,7 @@
                 </div>
                 <div class="music-player">
                     <a class="previous" href="#">previous</a>
+                    <a class="pause" href="#">pause</a>
                     <a class="play" href="#">play</a>
                     <a class="next" href="#">next</a>
                 </div>
@@ -61,7 +62,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
         <script src="js/vendor/sketch.js"></script>
         <script src="js/main.js"></script>
 

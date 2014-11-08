@@ -6500,6 +6500,9 @@ header {
 .music-player a.previous {
   background-position: 0px 0px;
 }
+.music-player a.pause {
+  background-position: -49px 0px;
+}
 .music-player a.play {
   background-position: -99px 0px;
 }
