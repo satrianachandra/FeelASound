@@ -1,7 +1,7 @@
 Feel a Sound is just another way of experiencing music.
 
 * Source: [https://github.com/satrianachandra/FeelASound](https://github.com/satrianachandra/FeelASound)
-* Homepage: [http://feelasound.com](http://feelasound.com)
+* Homepage: [https://feelasound.herokuapp.com/](https://feelasound.herokuapp.com/)
 * Twitter: [@sovalyetech](http://twitter.com/sovalyetech)
 
 
