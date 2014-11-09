@@ -28,7 +28,7 @@
         <div id="container" >
         
         <header>
-            <div class="tint">
+            <div class="tint playlist-cover">
                 <img src="img/playlist_cover.png" alt="Playlist Cover">
             </div>
             <div class="song-info">

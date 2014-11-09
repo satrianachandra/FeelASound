@@ -189,14 +189,18 @@
             };
           })(this);
           analyser.start();
+          $playlist_cover = $('.playlist-cover');
+          $playlist_cover.fadeTo(2000,0.01);
           $('.pause').on('click', function(e){
             e.preventDefault();
             analyser.stop();
+            $playlist_cover.fadeTo(4000,1);
 
           });
           $('.play').on('click', function(e){
             e.preventDefault();
             analyser.start();
+            $playlist_cover.fadeTo(4000,0.01);
 
           });
           document.body.appendChild(analyser.audio);
